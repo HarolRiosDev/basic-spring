@@ -15,11 +15,10 @@ public class CountryServiceImpl implements CountryService {
 
     private CountryRepository countryRepository;
 
-    //private CountryMapper countryMapper;
+    private CountryMapper countryMapper;
 
     @Override
     public List<Country> getAllCountries() {
-        var countryList = countryRepository.findAll();
-        return null;//countryMapper.toCountryList(countryList);
+        return countryMapper.toCountryList(countryRepository.findAll());
     }
 }

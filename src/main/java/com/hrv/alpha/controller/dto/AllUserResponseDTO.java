@@ -4,10 +4,12 @@ import com.hrv.alpha.controller.dto.common.User;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 @Builder
-public class FindUserResponseDTO {
+public class AllUserResponseDTO {
 
-    private User user;
+    private List<User> user;
 
 }

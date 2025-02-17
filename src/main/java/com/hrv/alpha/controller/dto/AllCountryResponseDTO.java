@@ -8,7 +8,7 @@ import java.util.List;
 
 @Data
 @Builder
-public class GetCountryResponseDTO {
+public class AllCountryResponseDTO {
 
     private List<Country> countries;
 }

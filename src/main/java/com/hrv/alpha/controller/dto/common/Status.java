@@ -21,14 +21,11 @@ public enum Status {
     }
 
 
-    public String getDescriptionByType(int type) {
-        List<Status> statusArray =  Arrays.stream(Status.values()).toList();
-        Optional<Status> state = statusArray.stream().filter(x-> x.type == type).findFirst();
-        if(state.isPresent()){
-            Status status = state.get();
-            return status.getDescription();
-        }
-        return null;
+    public static Status getStatusByType(int type) {
+        return Arrays.stream(Status.values())
+                .filter(status -> status.getType() == type)
+                .findFirst()
+                .orElse(null);
     }
 
 }
