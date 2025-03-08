@@ -3,8 +3,6 @@ package com.hrv.alpha.controller.dto.common;
 import lombok.Getter;
 
 import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
 @Getter
 public enum Status {
     SINGLE(1, "SINGLE"),

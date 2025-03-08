@@ -1,21 +1,21 @@
 package com.hrv.alpha.service.impl;
 
 import com.hrv.alpha.controller.dto.common.Country;
-import com.hrv.alpha.mapper.CountryMapper;
 import com.hrv.alpha.repository.CountryRepository;
 import com.hrv.alpha.service.CountryService;
-import lombok.AllArgsConstructor;
+import com.hrv.alpha.service.mapper.CountryMapper;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class CountryServiceImpl implements CountryService {
 
-    private CountryRepository countryRepository;
+    private final CountryRepository countryRepository;
 
-    private CountryMapper countryMapper;
+    private final CountryMapper countryMapper;
 
     @Override
     public List<Country> getAllCountries() {

@@ -1,4 +1,4 @@
-package com.hrv.alpha.mapper;
+package com.hrv.alpha.service.mapper;
 
 import com.hrv.alpha.controller.dto.common.Country;
 import com.hrv.alpha.repository.entity.CountryEntity;
